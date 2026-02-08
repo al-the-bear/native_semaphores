@@ -1,4 +1,4 @@
-library runtime_native_semaphores;
+library tom_rt_native_semaphores;
 
 export 'src/semaphore_counter.dart';
 export 'src/semaphore_identity.dart';

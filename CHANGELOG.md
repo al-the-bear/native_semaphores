@@ -1,3 +1,8 @@
+## 1.0.0-beta.7 (tom_rt_native_semaphores fork)
+- Forked from `runtime_native_semaphores` 1.0.0-beta.7
+- Renamed package to `tom_rt_native_semaphores`
+- Added missing `Abi.linuxArm64` and `Abi.linuxArm` entries to `mode_t` ABI mapping to fix cross-platform AOT compilation errors
+
 ## 0.0.1
 - Initial release
 - See test/semaphore_test.dart for unified usage examples

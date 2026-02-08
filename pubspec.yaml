@@ -1,8 +1,8 @@
-name: runtime_native_semaphores
-homepage: https://pieces.app
-repository: https://github.com/open-runtime/native_semaphores
+name: tom_rt_native_semaphores
+homepage: https://github.com/open-runtime/native_semaphores
+repository: https://github.com/al-the-bear/native_semaphores
 version: 1.0.0-beta.7
-description: A library for creating and managing named semaphores in Dart using FFI across macOS, Linux, and Windows.
+description: Temporary fork of runtime_native_semaphores with missing Linux ARM ABI mappings added to fix cross-platform AOT compilation errors.
 environment:
   sdk: '>=3.3.0 <4.0.0'
 

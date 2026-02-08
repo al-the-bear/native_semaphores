@@ -1,9 +1,9 @@
 import 'dart:isolate' show Isolate, ReceivePort, SendPort;
 import 'dart:math' show Random;
 
-import 'package:runtime_native_semaphores/src/semaphore_counter.dart'
+import 'package:tom_rt_native_semaphores/src/semaphore_counter.dart'
     show SemaphoreCount, SemaphoreCountDeletion, SemaphoreCountUpdate, SemaphoreCounter, SemaphoreCounters, SemaphoreCounts;
-import 'package:runtime_native_semaphores/src/semaphore_identity.dart' show SemaphoreIdentities, SemaphoreIdentity;
+import 'package:tom_rt_native_semaphores/src/semaphore_identity.dart' show SemaphoreIdentities, SemaphoreIdentity;
 import 'package:safe_int_id/safe_int_id.dart' show safeIntId;
 
 import 'package:test/test.dart' show equals, everyElement, expect, group, isNot, test;

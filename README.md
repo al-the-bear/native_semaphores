@@ -1,6 +1,19 @@
-# runtime_native_semaphores ⎹ By [Pieces for Developers](https://pieces.app)
+# tom_rt_native_semaphores
 
-[![Native Named Semaphores](https://github.com/open-runtime/native_semaphores/actions/workflows/workflow.yaml/badge.svg)](https://github.com/open-runtime/native_semaphores/actions/workflows/workflow.yaml)
+> **Temporary fork** of [`runtime_native_semaphores`](https://pub.dev/packages/runtime_native_semaphores) by [Pieces for Developers](https://pieces.app).
+
+## Why this fork?
+
+The upstream `runtime_native_semaphores` package is missing `Abi.linuxArm64` and `Abi.linuxArm` entries in its `@AbiSpecificIntegerMapping` for the `mode_t` FFI type. This causes Dart AOT compilation to fail when cross-compiling for Linux ARM targets (e.g. `linux-arm64`, `linux-arm`).
+
+This fork adds the missing ABI mappings. No other code changes have been made. Once the upstream package includes these mappings, this fork will no longer be needed.
+
+**Changes from upstream (`1.0.0-beta.7`):**
+- Added `Abi.linuxArm64` and `Abi.linuxArm` to `mode_t` ABI mapping in `lib/src/ffi/unix.dart`
+
+**Upstream:** [github.com/open-runtime/native_semaphores](https://github.com/open-runtime/native_semaphores)
+
+---
 
 ## Overview
 
@@ -21,15 +34,15 @@ The `runtime_native_semaphores` package supports the following platforms:
 --- 
 
 ## Installation
-To add `runtime_native_semaphores` to your Dart package, include it in your `pubspec.yaml` file:
+To add `tom_rt_native_semaphores` to your Dart package, include it in your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  runtime_native_semaphores: ^1.0.0-beta.1
+  tom_rt_native_semaphores: ^1.0.0-beta.7
 ```
 
 ## Getting Started
-The `runtime_native_semaphores` package provides a unified API for working with named semaphores across different MacOS (x86_64, arm64), Linux (x86_64, arm64) and Windows platforms.
+The `tom_rt_native_semaphores` package provides a unified API for working with named semaphores across different MacOS (x86_64, arm64), Linux (x86_64, arm64) and Windows platforms.
 The package exposes a `NativeSemaphore` class that can be used to create, open, lock, unlock, manage and dispose, named semaphores.
 
 ### Creating a Named Semaphore
@@ -37,7 +50,7 @@ The following example demonstrates how to create a semaphore, lock and unlock it
 
 ```dart
 import 'dart:isolate';
-import 'package:runtime_native_semaphores/runtime_native_semaphores.dart' show NativeSemaphore;
+import 'package:tom_rt_native_semaphores/tom_rt_native_semaphores.dart' show NativeSemaphore;
 
 void main() {
   // Create a unique identifier for the semaphore 

@@ -1,4 +1,4 @@
-# Disable analysis for this third-party package
+# Suppress warnings in third-party code we don't maintain
 analyzer:
-  exclude:
-    - "**"
+  errors:
+    unused_element: ignore

@@ -2,7 +2,7 @@ import 'dart:ffi' show Finalizable;
 import 'dart:io' show Platform;
 
 import 'package:meta/meta.dart' show protected;
-import '../runtime_native_semaphores.dart'
+import '../tom_rt_native_semaphores.dart'
     show
         LatePropertyAssigned,
         SemaphoreCount,

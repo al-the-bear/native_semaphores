@@ -4,9 +4,9 @@ import 'dart:io' show File, Platform, Process, ProcessResult, ProcessSignal, Pro
 import 'dart:isolate' show Isolate, ReceivePort, SendPort;
 import 'dart:math' show Random;
 
-import 'package:runtime_native_semaphores/runtime_native_semaphores.dart' show NativeSemaphore;
+import 'package:tom_rt_native_semaphores/tom_rt_native_semaphores.dart' show NativeSemaphore;
 import 'package:safe_int_id/safe_int_id.dart' show safeIntId;
-import 'package:runtime_native_semaphores/src/native_semaphore_types.dart' show NS;
+import 'package:tom_rt_native_semaphores/src/native_semaphore_types.dart' show NS;
 import 'package:test/expect.dart';
 import 'package:test/test.dart' show Timeout, equals, everyElement, expect, group, isTrue, setUp, test;
 

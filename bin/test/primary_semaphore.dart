@@ -1,6 +1,6 @@
 import 'dart:io' show exit, pid, stdout;
 
-import 'package:runtime_native_semaphores/runtime_native_semaphores.dart';
+import 'package:tom_rt_native_semaphores/tom_rt_native_semaphores.dart';
 
 main(List<String> args) async {
   String name = args.elementAt(0);
