@@ -1,7 +1,7 @@
 name: tom_rt_native_semaphores
 homepage: https://github.com/open-runtime/native_semaphores
 repository: https://github.com/al-the-bear/native_semaphores
-version: 1.0.0-beta.7
+version: 1.0.1
 description: Temporary fork of runtime_native_semaphores with missing Linux ARM ABI mappings added to fix cross-platform AOT compilation errors.
 environment:
   sdk: '>=3.3.0 <4.0.0'
